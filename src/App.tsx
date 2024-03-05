@@ -116,7 +116,7 @@ const App = () => {
             </Button>
             <Slider
               value={[delayValue]}
-              onValueChange={setDelayValue}
+              onValueChange={(v) => setDelayValue(v[0])}
               min={20}
               max={1000}
               step={1}
